@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/add.css">
+
+<div class="row">
+    <div class="accordion col" id="add-box">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" id="add" type="button" data-bs-toggle="collapse" data-bs-target="#add-content" aria-expanded="true" aria-controls="collapseOne">
+                음악 추가하기
+                </button>
+            </div>
+            <div id="add-content" class="accordion-collapse collapse" data-bs-parent="#add-box">
+                <div class="accordion-body">
+                    <form id="add-form" action="/add" method="post">
+                        <input type="hidden" name="userId" value="<%= userId %>">
+                        <table>
+                            <tr>
+                                <th>음악 제목</th>
+                                <td>
+                                    <input type="text" name="musicName" id="musicName">
+                                    <span class="warning warn-musicName"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>아티스트</th>
+                                <td>
+                                    <input type="text" name="artistName" id="artistName">
+                                    <span class="warning warn-artistName"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>장르</th>
+                                <td>
+                                    <div id="genre-box">
+                                        <% for(let i = 0; i < allGenreList.length; i++) { %>
+                                            <div class="check-box">
+                                                <input type="checkbox" name="genreList" class="genreList" value="<%= allGenreList[i].id %>"><%= allGenreList[i].genreName %>  
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>발매일</th>
+                                <td>
+                                    <input type="date" name="publishDate" id="publishDate">
+                                    <span class="warning warn-publishDate"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>유튜브 링크</th>
+                                <td>
+                                    <input type="text" name="address" id="address">
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </form>
+                    <button type="button" class="btn btn-success" id="add-btn">추가하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/add.js"></script>

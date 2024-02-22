@@ -1,0 +1,13 @@
+.card:hover{
+    background-color: #fbffe4;
+    transition: 0.1s;
+}
+
+.card .card-body{
+    padding: 8px 15px;
+}
+
+#music-box .music-name{
+    display: block;
+    position:relative;
+}

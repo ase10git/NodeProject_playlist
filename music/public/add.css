@@ -1,0 +1,67 @@
+#add-box{
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.sub-body .accordion input{
+    border-radius: 10px;
+}
+
+.sub-body .accordion #add{
+    background:#daff0a;
+    border:2px solid #eaff00;
+    color:black;
+}
+
+.sub-body .accordion table{
+    width: 100%;
+}
+
+.sub-body .accordion .accordion-body table tr td{
+    width: 80%;
+}
+
+.sub-body .accordion .accordion-body table tr, .sub-body .accordion-body table th{
+    margin:0; padding:0;
+}
+
+
+#genre-box{
+    width: 100%;
+    margin: auto 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#genre-box .check-box{
+    margin-right: 10px;
+}
+
+#genre-box .genreList{
+    width: auto;
+    margin-right: 5px;
+}
+
+.genre-box, #publishDate{
+    margin: 3px 10px;
+}
+
+.warning{
+    display: block;
+    color:red;
+}
+
+.btn{
+    height: 100%;
+    background:#daff0a;
+    border:2px solid #eaff00;
+    color:black;
+    font-weight: none;
+}
+
+.btn:hover{
+    background:#daff0a;
+    color:black;
+    border:2px solid #c0e00b; 
+}

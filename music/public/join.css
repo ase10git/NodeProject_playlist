@@ -1,0 +1,12 @@
+.sec{position:absolute; top:25%}
+
+.sec .container .row #btn-join{
+    background:#daff0a;
+    border:none;
+    border:2px solid #eaff00;
+    color:black;
+}
+
+.sec .container .row #btn-join:hover{
+    border:2px solid #c0e00b; 
+}

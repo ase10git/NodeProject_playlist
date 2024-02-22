@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/list.css">
+
+<div class="row">
+    <div class="col">
+        <% for(let i = 0; i < musicList.length; i++) { %>
+        <div class="gt card">
+            <a href="/<%= musicList[i].id %>">
+                <div id="music-box" class="card-body">
+                    <span class="music-name"><%= musicList[i].musicName %></span>
+                    <span class="artist-name"><%= musicList[i].artistName %></span>
+                </div>
+            </a>
+        </div>
+        <% } %>
+    </div>
+</div>
+

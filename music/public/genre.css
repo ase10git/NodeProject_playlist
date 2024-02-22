@@ -1,0 +1,24 @@
+.sec .container .genre-wrap{
+    display: flex; justify-content: center;
+}
+
+.genre-wrap .genre-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.genre-btn{
+    margin : 5px; padding : 2px 4px;
+    width: 120px; height: 50px;
+    background:#daff0a;
+    border-radius : 10px;
+    border:none;
+    color: black;
+    font-size: 0.9rem; text-align: center;
+    overflow-wrap: break-word;
+    transition: 0.3s;
+}
+
+.genre-btn:hover{
+    background:#07ff59;
+}

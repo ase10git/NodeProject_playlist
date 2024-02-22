@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/genre.css">
+
+<div class="container">
+    <div class="row genre-wrap">
+        <h2 class="genre-title">장르 선택</h2>
+        <% for(let i = 0; i < allGenreList.length; i++) { %>
+            <button class="genre-btn" data-genre-id="<%= allGenreList[i].id %>"><%= allGenreList[i].genreName %></button>
+        <% } %>
+    </div>
+</div>
+
+<script src="/js/genre.js"></script>

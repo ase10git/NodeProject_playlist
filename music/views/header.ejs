@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/header.css">
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col login-info">
+                <span class="username"><%= username %></span>
+                <span class="message">님 환영합니다!</span>
+                <button type="button" class="btn logout-btn btn-sm">로그아웃</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col search">
+                <select id="select-option" class="btn btn-primary">
+                    <option id="opt-name" class="option">곡 이름</option>
+                    <option id="opt-artist" class="option">아티스트</option>
+                </select>
+                <input type="search" id="search" class="search" placeholder="곡 이름이나 아티스트로 검색하세요" value="">
+                <button type="button" class="btn btn-primary" id="search-btn">검색</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="/js/header.js"></script>
